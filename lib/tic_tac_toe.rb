@@ -22,7 +22,7 @@ def input_to_index(num)
   return index
 end
 
-def move(array, index, character="X")
+def move(array, index, character = "X")
 array[index] = character
 
 end
