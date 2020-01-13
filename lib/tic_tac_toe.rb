@@ -58,8 +58,9 @@ def turn(board)
   end
 end
 def turn_count(board)
-  board.each do |occ|
   count = 0
+
+  board.each do |occ|
     if occ == "X" || occ == "O"
       count += 1
     end
