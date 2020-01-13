@@ -147,8 +147,10 @@ def play(board)
     turn(board)
   end
 
-    if won?(board)
+    if won?(board) && winner(board) == "X"
       puts "Congratulations X!"
+    elsif won?(board) && winner(board) == "O"
+      puts "Congratulations O!"
     elsif draw?(board)
       puts "This game has been played to a draw."
     end
