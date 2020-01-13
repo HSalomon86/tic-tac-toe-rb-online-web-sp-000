@@ -19,6 +19,7 @@ end
 
 def input_to_index(num)
   index = num.to_i - 1
+
   return index
 end
 
@@ -28,4 +29,20 @@ end
 
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
+end
+
+def on_board?(num)
+  if num.between?(0, 8)
+    return true
+  else
+    return false
+  end
+end
+
+def valid_move?(board, index)
+  if !(position_taken?(board, index)) && on_board?(index)
+    return true
+  else
+    return false
+  end
 end
