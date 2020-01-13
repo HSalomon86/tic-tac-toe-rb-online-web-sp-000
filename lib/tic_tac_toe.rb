@@ -107,3 +107,34 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.all? { |full| full == "X" || full == "O"}
+end
+
+def draw?(board)
+  if !won?(board) && full?(board)
+    return true
+  else
+    return false
+  end
+end
+
+def over?(board)
+  if won?(board) || full?(board) || draw?(board)
+    return true
+  else
+    return false
+  end
+end
+
+def winner(board)
+  idx = won?(board)
+  if won?(board) == false
+    return nil
+  elsif  board[idx[0]] == "X"
+    return "X"
+  else
+    return "O"
+  end
+end
