@@ -140,7 +140,8 @@ def winner(board)
 end
 
 def play(board)
-  turn(board) until over?(board)
+  turn(board)
+  until over?(board)
   end
     if won?(board)
       puts "You have won the game. Congratulations!"
