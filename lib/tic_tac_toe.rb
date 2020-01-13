@@ -148,7 +148,7 @@ def play(board)
   end
 
     if won?(board)
-      puts "You have won the game. Congratulations!"
+      puts "Congratulations X!"
     elsif draw?(board)
       puts "This game has been played to a draw."
     end
