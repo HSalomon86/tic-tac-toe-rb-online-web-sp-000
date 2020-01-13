@@ -148,4 +148,5 @@ def play(board)
     elsif draw?(board)
       puts "This game has been played to a draw."
     end
+    turn(board)
 end
