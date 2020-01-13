@@ -55,10 +55,10 @@ def turn(board)
 
   if valid_move?(board, input)
     move(board, input, character)
-    display_board
   else
     turn(board)
   end
+  display_board(board)
 end
 def turn_count(board)
   count = 0
