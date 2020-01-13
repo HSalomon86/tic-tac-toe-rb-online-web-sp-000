@@ -23,8 +23,7 @@ def input_to_index(num)
 end
 
 def move(array, index, character)
-array[index] = character
-
+  array[index] = character
 end
 
 def position_taken?(board, index)
