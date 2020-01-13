@@ -55,6 +55,7 @@ def turn(board)
     move(board, input, character = "X" )
   else
     turn(board)
+    over?(board)
   end
 end
 def turn_count(board)
