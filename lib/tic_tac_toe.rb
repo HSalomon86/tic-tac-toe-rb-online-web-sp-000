@@ -57,3 +57,10 @@ def turn(board)
     turn(board)
   end
 end
+def turn_count(board)
+  board.each do |count|
+    if count == "X" || count == "O"
+      count += 1
+    end
+  return count
+end
