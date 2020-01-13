@@ -141,7 +141,6 @@ def winner(board)
 end
 
 def play(board)
-  unless over?(board)
     turn(board)
     over?(board)
     if won?(board)
@@ -149,5 +148,4 @@ def play(board)
     elsif draw?(board)
       puts "This game has been played to a draw."
     end
-  end
 end
