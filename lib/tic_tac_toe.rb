@@ -18,6 +18,6 @@ puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def input_to_index(num)
-  index = num - 1
+  index = num.to_i - 1
   return input
 end
